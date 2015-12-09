@@ -9,7 +9,7 @@ function Init()
 
 	var input = document.getElementById( "input" );
 	// ProcessFile( e, SolverProcedure );
-	Print( SolverProcedure( input.innerHTML ) );
+	Print( SolverProcedure( input.innerText ) );
 }
 
 function Print( text )

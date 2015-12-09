@@ -74,7 +74,7 @@ else
 {
 	echo "<h1>Day $day Puzzle $puzzle</h1>";
 	echo '<pre id="input" hidden>';
-	echo file_get_contents( $inputPath );
+	echo htmlspecialchars( file_get_contents( $inputPath ) );
 	echo "</pre>";
 	echo 'Result: <pre id="output" style="display: inline;"></pre>';
 	echo '<p><a href="/">Home</a></p>';
